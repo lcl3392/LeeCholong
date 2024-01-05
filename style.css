@@ -1,0 +1,1166 @@
+/* Google Web Font : Montserrat */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+
+/* FontAwesome CDN 4.7 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* Default CSS */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+  font-size: 15px;
+  margin: 0;
+  height: 100vh;
+  background-color: #fff;
+}
+
+/* Entire Layout */
+.cd-section {
+  height: 100vh;
+}
+.cd-section > div {
+  height: 100%;
+  position: relative;
+}
+.content {
+  background-color: #ddd;
+  position: absolute;
+  width: calc(100% - 40px);
+  height: calc(100% - 80px);
+  left: 20px;
+  bottom: 20px;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.gnb-inner {
+  /*border: 1px solid #000;*/
+  width: calc(100% - 40px);
+  margin: auto;
+  height: 60px;
+  line-height: 60px;
+}
+.logo {
+  float: left;
+}
+.logo img {
+  padding-top: 17px;
+}
+.gnb {
+  float: right;
+}
+.menu {
+  /* display: none; */
+}
+.menu a {
+  color: #000;
+  font-weight: 500;
+  border:none;
+  padding-left: 20px;
+  padding-right: 15px;
+  position: relative;
+  display: inline;
+  width: 120px;
+  text-align: center;
+  transition: 1s;
+}
+.menu a::after{
+  position: absolute;
+  content: '';
+  left: -3px;
+  top: 5px;
+  width: 2px;
+  height: 12px;
+  background-color: #000;
+}
+.menu a:hover {
+  background-color: #A1EEBD;
+  width: 20px;
+  height: 30px;
+  border-radius: 25px;
+}
+.menu a:first-child::after{
+  display: none;
+}
+.slogan {
+  font-size: 18px;
+  font-style: italic;
+}
+.trigger {
+  display: none;
+}
+
+/* Hiring Button */
+.btn-hiring {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.38);
+  transition: 0.5s;
+}
+.btn-hiring .fa {
+  transform: rotateY(180deg);
+  margin-right: 5px;
+}
+.btn-hiring:active {
+  transform: scale(0);
+}
+
+/* ################# Section : Home ################ */
+.home-inner {
+  background-color: #fff;
+  height: 100%;
+}
+.home-inner::before {
+  content: "";
+  background-color: #A1EEBD;
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: overlay 1s 2s ease-in-out both;
+}
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.2em;
+  margin: 0;
+  font-family: "Rubik Doodle Shadow", serif;
+  animation: slideup 2s linear;
+  animation-fill-mode: both;
+}
+.welcome-text span {
+  display: block;
+  font-size: 26px;
+}
+.welcome-text span .fa {
+  color: #1db1f0;
+}
+.opacity-image {
+  background: url(images/03.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  opacity: 0;
+  animation: opacity-image 1s 2.5s ease-in both;
+}
+.opacity-image:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.welcome-top {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+.welcome-top span {
+  font-size: 35px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(20px); 
+  animation: fadeInAndSlideUp 1s forwards 3s;
+}
+.welcome-top span:nth-child(1){
+  position: absolute;
+  top: -70px;
+  left: -950px;
+  color: #A1EEBD;
+  animation-delay: 3s;
+}
+.welcome-top span:nth-child(2){
+  position: absolute;
+  content: '';
+  top: -48px;
+  right: -188px;
+  width: 650px;
+  height: 5px;
+  background-color: #fff;
+  animation-delay: 3s;
+}
+.welcome-bottom {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+}
+.welcome-bottom span {
+  font-size: 35px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(20px); 
+  animation: fadeInAndSlideUp 1s forwards 3s;
+}
+.welcome-bottom span:nth-child(1){
+  position: absolute;
+  top: 8px;
+  left: -1393px;;
+  color: #A1EEBD;
+  animation-delay: 4s;
+}
+.welcome-bottom span:nth-child(2){
+  position: absolute;
+  content: '';
+  top: 28px;
+  right: 1398px;
+  width: 310px;
+  height: 5px;
+  background-color: #fff;
+  animation-delay: 4s;
+}
+
+.home-heading {
+  position: absolute;
+  top: 50%;
+  left: 400px;
+  transform: translateY(-55%);
+}
+.home-heading span {
+  display: block;
+  font-size: 165px;
+  color: #fff;
+  font-weight: bold;
+  width: 0;
+  overflow: hidden;
+  animation: reveal 1s 3s ease-in-out both;
+}
+.home-heading span:nth-child(1) {
+  animation-delay: 3s;
+  color: #A1EEBD;
+}
+.home-heading span:nth-child(2) {
+  animation-delay: 3.2s;
+  font-size: 85px;
+}
+.home-heading span:nth-child(3) {
+  animation-delay: 3.4s;
+  font-size: 100px;
+}
+
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes overlay {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes opacity-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes reveal {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes fadeInAndSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+/* ################# Section : about  ################# */
+.about-inner {
+  background: url(images/right.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+}
+.about-inner:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.about-items {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(18%);
+}
+.item h2 {
+  margin: 0;
+  font-size: 75px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+.item h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: yellow;
+  transition: 0.9s ease; /* Adjust the transition duration as needed */
+}
+.item h2:hover::after {
+  width: 100%;
+}
+.item h3 {
+  font-size: 45px;
+  margin-bottom: 60px;
+}
+.item h3 b {
+  border-bottom: #fff solid 3px;
+}
+.item h3:hover b {
+  color: yellow;
+  transition: 2s;
+  
+}
+.item h3::before {
+  content: ",,";
+  font-family: "Overpass", sans-serif;
+  font-size: 130px;
+  position: absolute;
+  color: #ddd;
+  transform: rotate(180deg);
+  top: 111px;
+  left: -65px;
+}
+.item p {
+  overflow: hidden;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* ############## Section : project  ############## */
+.project-inner {
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.tabs {
+  height: 100%;
+  width: 500%;
+  transition: 0.5s;
+}
+.tab {
+  height: 100%;
+  float: left;
+  width: 20%;
+}
+.tab > div {
+  height: 100%;
+  float: left;
+}
+.project-info {
+  width: 25%;
+}
+.project-photo {
+  width: 72%;
+  overflow: hidden;
+  margin-top: 72px;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+.btn {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 25%;
+  text-align: center;
+}
+.btn label {
+  cursor: pointer;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 8px;
+  position: relative;
+}
+.btn label:before {
+  content: "";
+  display: inline-block;
+  border: 1px solid transparent;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  transition: 0.3s;
+}
+.btn label:hover:before {
+  border: 1px solid #aaa;
+}
+
+input[id="tab1"]:checked ~ .btn label[for="tab1"]:before,
+input[id="tab2"]:checked ~ .btn label[for="tab2"]:before,
+input[id="tab3"]:checked ~ .btn label[for="tab3"]:before,
+input[id="tab4"]:checked ~ .btn label[for="tab4"]:before,
+input[id="tab5"]:checked ~ .btn label[for="tab5"]:before  {
+  border: 1px solid #aaa;
+}
+
+input[id="tab1"]:checked ~ .tabs {
+  margin-left: 0;
+}
+input[id="tab2"]:checked ~ .tabs {
+  margin-left: -100%;
+}
+input[id="tab3"]:checked ~ .tabs {
+  margin-left: -200%;
+}
+input[id="tab4"]:checked ~ .tabs {
+  margin-left: -300%;
+}
+input[id="tab5"]:checked ~ .tabs {
+  margin-left: -400%;
+}
+
+/* Project info */
+.project-info {
+  padding: 50px;
+  position: relative;
+}
+.project-info h3 {
+  font-size: 20px;
+  position: relative;
+}
+.project-info p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.project-info ul {
+  line-height: 2em;
+  margin: 30px 0;
+}
+.project-info ul li:before {
+  content: "\f105";
+  font-family: fontawesome;
+  margin-right: 10px;
+}
+.detail {
+  margin-bottom: 50px;
+}
+.detail div {
+  display: inline-block;
+  text-align: center;
+  width: 40.5%;
+  color: #999;
+}
+.detail div span {
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  color: #000;
+  margin-bottom: 10px;
+}
+.view-project {
+  background-color: #3f3f3f;
+  color: #fff;j
+  text-transform: uppercase;
+  font-size: 13px;
+  width: 220px;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+.view-project:hover {
+  background-color: #000;
+}
+.view-project .fa {
+  transition: 0.5s;
+}
+.view-project:hover .fa {
+  margin-left: 30px;
+}
+.project-info:before {
+  content: attr(data-text);
+  font-size: 130px;
+  color: #eee;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+/* ################# Section : plan  ##################*/
+.plan-inner {
+  background-color: #1d1b24;
+  height: 100%;
+}
+.plan-feature {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plan-feature > div {
+  height: 420px;
+  padding-top: 30px;
+  color: #bbb;
+}
+
+.plan-info > div {
+  float: left;
+}
+.plan-heading {
+  width: 70%;
+  padding-right: 50px;
+}
+.plan-heading h2,
+.history-info h2 {
+  color: #fff;
+  margin: 0;
+}
+.plan-heading p {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+.plan-photo {
+  width: 30%;
+}
+.plan-photo img {
+  margin-top: 100px;
+  width: 420px;
+  height: 300px;
+}
+.plan-heading hr.bar,
+.history-info hr.bar {
+  background-color: dodgerblue;
+  display: inline-block;
+}
+.history-slider div {
+  outline: none; /* Slick 슬라어더 드래글 할 때 나오는 아웃라인 없애기 */
+}
+.history-slider div h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.5em;
+}
+.history-slider div h4 span {
+  color: dodgerblue;
+}
+.history-slider div p {
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-right: 10px;
+}
+/* Slick.js Custom CSS */
+.history-slider .slick-arrow {
+  display: none !important;
+}
+.history-slider .slick-dots li button:before {
+  color: #fff;
+  font-size: 40px;
+}
+.history-slider .slick-dots li {
+  margin: 0;
+}
+
+/* ################# Section : manage  ################# */
+.manage-inner {
+  height: 100%;
+  border: 1px solid #ddd;
+}
+.manage-inner > div {
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.about-manage {
+  background-color: #1a1f24;
+  color: #fff;
+}
+.about-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 70%;
+}
+.manage-code {
+  background-color: #fff;
+}
+.manage-code img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.about-heading h2 {
+  margin: 0;
+}
+hr.bar {
+  width: 50px;
+  height: 4px;
+  border: none;
+  background-color: crimson;
+  margin: 30px auto;
+}
+.about-heading p {
+  color: #999;
+  font-size: 17px;
+  line-height: 1.6em;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.view-manages {
+  color: #bbb;
+  border: 1px solid #bbb;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.view-manages:hover {
+  background-color: #31c0ce;
+  color: #fff;
+  border-color: transparent;
+}
+
+/* ################# Section : skill  #################*/
+.skill-inner {
+  background: url(images/background-skill.jpg) no-repeat center center;
+  height: 100%;
+  position: relative;
+}
+.skill-inner:before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.feature {
+  width: 75%;
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color: #bbb;
+}
+.feature > div {
+  float: left;
+}
+.skill-front {
+  width: 35%;
+}
+.service {
+  width: 35%;
+  margin-top: 150px;
+}
+.skill-api-back {
+  width: 25%;
+  margin-top: 150px;
+  margin-left: -110px;
+}
+
+.skill-front strong {
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 70px;
+  transition: 0.5s;
+}
+.skill-front strong:hover {
+  color: #1db1f0;
+}
+.skill-front h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.skill-logo {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+.skill-logo:hover {
+  color: #1877f2;
+  font-weight: 700;
+}
+.skill-logo img {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #0a66c2;
+  transition: 0.5s;
+}
+.skill-logo img:hover {
+  border: 5px solid blue;
+}
+
+.skill-logo p {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+.service-item {
+  margin-bottom: 30px;
+}
+.service-item .fa,
+.skill-front .fa,
+.skill-api-back .fa,
+.skill-front-back strong .fa {
+  color: #1db1f0;
+  font-size: 40px;
+}
+.service-item h3,
+.back h3 {
+   color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* ##################### section : contact ################### */
+.contact-inner {
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #ddd;
+}
+.contact-featrue {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-featrue > div {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+.contact-form h3 b {
+  color: #1db1f0;
+}
+.contact-form h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+.send-box label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 15px 0;
+  margin-top: 20px;
+}
+.send-box label span {
+  color: crimson;
+}
+.send-box input[type="email"],
+.send-box input[type="text"],
+.send-box textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 3px;
+  outline: none;
+  width: 100%;
+  transition: 0.5s;
+}
+.send-box input[type="email"]:hover,
+.send-box input[type="text"]:hover,
+.send-box textarea:hover,
+.send-box input[type="email"]:focus,
+.send-box input[type="text"]:focus,
+.send-box textarea:focus {
+  border: 1px solid #1db1f0;
+  box-shadow: 0 0 5px #1db1f0;
+}
+.send-box input[type="email"]:focus,
+.send-box input[type="text"]:focus,
+.send-box textarea:focus {
+  background-color: #eee;
+}
+.send-box button {
+  background-color: #1db1f0;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+.send-box button:hover {
+  background-color: #000;
+}
+.contact-info h4 {
+  font-weight: normal;
+  font-size: 26px;
+  margin: 0;
+  padding-bottom: 3px;
+}
+.contact-info h4 b {
+  color: #1db1f0;
+}
+.contact-info ul li {
+  line-height: 2em;
+}
+.contact-info ul li:last-child {
+  color: #1db1f0;
+}
+.contact-info p {
+  line-height: 2.5rem;
+}
+
+/* ###################### SubPage : Hiring ###################### */
+.modal {
+  font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 50px;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+.header-inner {
+  width: 95%;
+  margin: auto;
+  height: 90px;
+  line-height: 90px;
+  border-bottom: 1px solid #ddd;
+}
+.modal-display {
+  font-size: 16px;
+}
+.hiring-main {
+  height: 600px;
+  position: relative;
+}
+.hiring-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hiring-heading span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+}
+.hiring-heading span::before,
+.hiring-heading span::after {
+  content: "";
+  height: 2px;
+  background-color: #000;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+}
+.hiring-heading span::before {
+  right: 120%;
+}
+.hiring-heading span::after {
+  left: 120%;
+}
+.hiring-heading h1 {
+  font-size: 60px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 40px;
+}
+.hiring-info {
+  overflow: hidden;
+}
+.hiring-info > div {
+   float: left;
+    width: 50%;
+    height: 693px;
+}
+
+.center-parent {
+  position: relative;
+}
+.center-child {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.center-child-mobile {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+
+.center-child h2,
+.Project-text h2,
+.center-child-mobile h2 {
+  font-size: 37px;
+  font-weight: normal;
+}
+.center-child p {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.center-child-mobile p {
+  font-size: 16px;
+  font-weight: 300;
+}
+.center-child ol li {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 15px -30px;
+}
+.photo img {
+  width: 100%;
+  border: 2px solid #000;
+}
+.hiring-slogan {
+  padding: 150px 0;
+}
+.hiring-slogan p {
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+.hiring-slogan b {
+  padding-left: 1300px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.hiring-slogan p::before {
+  content: ",,";
+  font-family: "Overpass", sans-serif;
+  font-size: 200px;
+  position: absolute;
+  color: #ddd;
+  transform: rotate(180deg);
+  top: -82px;
+  left: 20px;
+}
+.hiring-contact ul {
+  display: inline-block;
+  width: 49%;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.hiring-contact ul li:first-child {
+  font-weight: 400;
+}
+.hiring-contact ul li:last-child {
+  color: #1eae98;
+}
+.sns {
+  margin-bottom: -200px;
+}
+.sns a {
+  font-size: 22px;
+  color: #000;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 46px;
+  margin: 10px;
+  position: relative;
+  transition: 0.3s;
+}
+.sns a::before {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transition: 0.3s;
+}
+.sns a:hover {
+  color: #fff;
+}
+.sns a:hover::before {
+  transform: translateX(-50%) scale(1);
+}
+.sns a:nth-child(1)::before {
+  background-color: #1877f2;
+}
+.sns a:nth-child(2)::before {
+  background-color: #1da1f2;
+}
+.sns a:nth-child(3)::before {
+  background-color: #0a66c2;
+}
+.sns a:nth-child(4)::before {
+  background-color: #e4405f;
+}
+.sns a:nth-child(5)::before {
+  background-color: #cd201f;
+}
+.sns a:nth-child(6)::before {
+  background-color: #00c300;
+}
+
+/* ###################### SubPage : project ###################### */
+.hiring-main.project-main1,
+.hiring-main.project-main2,
+.hiring-main.project-main3 {
+  background: url(images/project-main.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.hiring-main.project-main1 .hiring-heading,
+.hiring-main.project-main2 .hiring-heading,
+.hiring-main.project-main3 .hiring-heading {
+  color: #000;
+  width: 100%;
+  animation: slidedown 1s linear both;
+}
+.hiring-main.project-main1 .hiring-heading h1,
+.hiring-main.project-main2 .hiring-heading h1,
+.hiring-main.project-main3 .hiring-heading h1 {
+  font-size: 70px;
+}
+
+.project-detail .hiring-slogan p::before {
+  left: -20px;
+}
+.photo.project-info {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 120px;
+}
+
+@keyframes slidedown {
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+/* Featherlight Custom CSS */
+.featherlight .featherlight-content {
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: auto;
+  padding: 0;
+  border-bottom: 25px solid transparent;
+  margin-left: 0px;
+  margin-right: 0;
+  max-height: 100%;
+  background: #fff;
+  cursor: auto;
+  white-space: normal;
+  width: 100%;
+  height: 100%;
+}
+.featherlight iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.featherlight .featherlight-close-icon {
+  position: absolute;
+  z-index: 9999;
+  top: 30px;
+  right: 70px;
+  line-height: 25px;
+  width: 25px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  border: none;
+  padding: 0;
+  font-size: 40px;
+}

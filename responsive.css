@@ -1,0 +1,413 @@
+@media (max-width: 768px) {
+  /*html {
+    scroll-behavior: smooth;
+  }*/
+  /* Entire Layout */
+  .cd-section {
+    height: auto;
+  }
+  .cd-section > div {
+    height: auto;
+  }
+  .content {
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Header */
+  header {
+    transition: 0.5s;
+    z-index: 100;
+  }
+  header.active {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  .menu {
+    display: block;
+    line-height: 40px;
+    margin-top: 60px;
+  }
+  .menu a {
+    position: static;
+    width: 100%;
+    text-align: right;
+    display: block;
+    padding-right: 20px;
+    color: #000;
+    font-size: 20px;
+  }
+  .menu a::after {
+    position: static;
+  }
+  .slogan {
+    display: none;
+  }
+  .gnb {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -270px;
+    width: 250px;
+    height: 100vh;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  .gnb.active {
+    right: 0;
+  }
+
+  /* Trigger */
+  .trigger {
+    display: block;
+    width: 24px;
+    height: 14px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .trigger span {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    transition: 0.5s;
+  }
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  /* Gototop */
+  .gototop {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .gototop.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .btn-hiring {
+    right: 20px;
+    bottom: 20px;
+  }
+  .cd-vertical-nav {
+    display: none;
+  }
+
+  /* Show Hide Section */
+  /* #home,
+  #about,
+  #project,
+  #plan,
+  #manage,
+  #skill,
+  #contact {
+    display: none;
+  } */
+
+  /* ################# Section : Home ################ */
+  .home-inner {
+    height: 100vh;
+  }
+  .welcome-text {
+    transform: translate(-50%, -50%) scale(0.7);
+    width: 100%;
+  }
+  .welcome-top {
+    display: none;
+  }
+  .welcome-bottom {
+    display: none;
+  }
+  .home-heading {
+    left: 20px;
+  }
+  .home-heading span {
+    font-size: 80px;
+  }
+  .home-heading span:nth-child(2) {
+    font-size: 50px;
+  }
+  .home-heading span:nth-child(3) {
+    font-size: 50px;
+  }
+
+  /* ################# Section : about  ################# */
+  .about-inner {
+    height: auto;
+    padding: 40px;
+    background: #000;
+  }
+  .about-items h2 {
+    font-size: 35px;
+  }
+  .about-items {
+    width: 100%;
+    position: static;
+    margin-left: 0;
+    transform: none;
+    text-align: center;
+  }
+  .item h3::before {
+    content: ",,";
+    font-family: "Overpass", sans-serif;
+    font-size: 50px;
+    /* position: absolute; */
+    color: #ddd;
+    /* transform: rotate(180deg); */
+    top: 0px;
+    /* left: -65px; */
+  }
+  .item h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+  .item p {
+    text-align: left;
+  }
+  /* ################# Section : plan  ##################*/
+  .plan-inner {
+    height: auto;
+    padding: 30px;
+  }
+  .plan-feature {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+  .plan-feature > div {
+    height: auto;
+  }
+  .plan-info {
+    margin-bottom: 30px;
+  }
+  .plan-info > div {
+    float: none;
+    width: 100%;
+  }
+  .plan-photo img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -30px;
+  }
+  .plan-heading {
+    padding-right: 0;
+    padding-bottom: -30px;
+  }
+  .plan-heading h2 {
+    padding-top: 40px;
+    font-size: 19px;
+  }
+
+  /* ################# Section : manage  ################# */
+  .manage-inner {
+    height: auto;
+  }
+  .manage-inner > div {
+    float: none;
+    width: 100%;
+    padding: 20px;
+  }
+  .about-heading,
+  .manage-code img {
+    position: static;
+    transform: none;
+    padding: 40px 20px;
+  }
+  .about-heading {
+    width: 100%;
+  }
+  .about-heading h2 {
+    font-size: 20px;
+  }
+  .manage-code {
+    text-align: center;
+  }
+
+  /* ################# Section : skill  #################*/
+  .skill-inner {
+    width: auto;
+    position: relative;
+  }
+  .feature {
+    width: 100%;
+    position: relative;
+    transform: none;
+    top: 0;
+    left: 0;
+  }
+  .feature > div {
+    float: none;
+    width: 100%;
+    padding-left: 40px;
+  }
+  .skill-front strong {
+    font-size: 47px;
+    margin-bottom: 40px;
+    padding-top: 60px;
+  }
+  .skill-front,
+  .service,
+  .skill-api-back {
+    width: 100%;
+    text-align: center;
+    padding-right: 25px;
+    margin-bottom: -50px;
+  }
+  .skill-api-back {
+    padding-bottom: 90px;
+    margin-left: 0;
+  }
+
+  /* ##################### section : contact ################### */
+  .contact-inner {
+    width: auto;
+  }
+  .contact-featrue {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+  .contact-featrue > div {
+    float: none;
+    width: 100%;
+    padding: 35px;
+  }
+  .contact-form h3 {
+    padding-top: 30px;
+  }
+  .contact-info {
+    padding-bottom: 20px;
+  }
+
+  /* ############## Section : project  ##############*/
+  .project-inner {
+    width: auto;
+    border: none;
+  }
+  .tab > div {
+    float: none;
+    width: 100%;
+  }
+  .view-project {
+    width: 100%;
+  }
+  .project-info {
+    padding: 20px;
+  }
+  .project-info h3 {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+  .project-info p {
+    position: relative;
+  }
+  .btn {
+    width: 100%;
+    bottom: -20px;
+    padding-bottom: 20px;
+  }
+
+  /* ###################### SubPage : Hiring ###################### */
+  .hiring-main {
+    height: 300px;
+  }
+  .hiring-heading {
+    width: 100%;
+    top: 65%;
+  }
+  .hiring-heading h1 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .hiring-info {
+    padding: 20px;
+  }
+  .hiring-info > div {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .center-child,
+  .center-child-mobile,
+  .center-child ol li {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+  .center-child p {
+    font-size: 15px;
+  }
+  .hiring-slogan {
+    padding: 50px 0;
+  }
+  .hiring-slogan p,
+  .hiring-slogan b {
+    display: none;
+  }
+  .hiring-slogan p::before {
+    top: -110px;
+  }
+  .hiring-contact ul {
+    display: block;
+    width: 100%;
+  }
+  .center-child h2,
+  .center-child-mobile h2 {
+    font-size: 22px;
+  }
+
+  /* Faeatherlight Mobile CSS */
+  .featherlight .featherlight-close-icon {
+    font-size: 24px;
+    right: 20px;
+    top: 35px;
+  }
+
+  /* ###################### SubPage : project ###################### */
+  .hiring-main.project-main1,
+  .hiring-main.project-main2,
+  .hiring-main.project-main3 {
+    height: 70vh;
+  }
+  .hiring-main.project-main1 .hiring-heading h1,
+  .hiring-main.project-main2 .hiring-heading h1,
+  .hiring-main.project-main3 .hiring-heading h1 {
+    font-size: 40px;
+  }
+  .photo.project-info {
+    font-size: 19px;
+  }
+}
