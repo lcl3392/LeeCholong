@@ -74,6 +74,7 @@ header {
 .menu {
   display: none;
 }
+/* 수정 */
 .menu a {
   color: #000;
   font-weight: 500;
