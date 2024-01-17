@@ -19,20 +19,27 @@
           <div class="modal-display">+ Project Descriptions #02</div>
         </div>
       </div>
-      <div class="hiring-main project-main2">
+      <div class="hiring-main project-main3">
         <div class="hiring-heading">
           <span>PROJECT 02</span>
-          <h1>전기자동차 정보 사이트</h1>
+          <h1>사이좋은 사람들 Cyworld</h1>
         </div>
       </div>
       <article class="hiring-info">
         <div class="center-parent">
           <div class="center-child">
             <h2>+ Project Descriptions #02</h2>
-            <p>React Redux를 사용하여 전기차 정보를 보여주는 웹 애플리케이션</p>
             <p>
-              카테고리에 알맞은 카드 이미지 노출하여 보여주고 포스트 검색
-              기능,카드 클릭 시 모달 오픈 하여 보여준다.
+              친구들과 소통하며 라이프 스타일을 공유하는 추억의 싸이월드 재현
+            </p>
+            <p>
+              누구나 자신만의 미니 홈페이지를 만들어 꾸밀 수 있고, 자신의
+              이야기를 담을 수 있는 SNS 서비스 앱
+            </p>
+            <p>
+              데이터 관리 : Local Storage를 활용하여 데이터를 클라이언트 측에서
+              관리하고, 서버와의 통신 없이 필요한 정보를 로컬스토리지에서
+              저장하고 가져옵니다.
             </p>
           </div>
         </div>
@@ -40,40 +47,104 @@
           <ul>
             <li>
               <b>Website</b> :
-              <a href="https://lcl3392.github.io/Tamea-ev/dist/">Tamea-ev</a>
+              <a href="https://lcl3392.github.io/Project_cyworld/dist"
+                >Team Project_cyworld</a
+              >
             </li>
             <li><b>Tech Stack</b></li>
             <li>
-              React, React Hooks, React Router, Axios <br />
-              &nbsp;&nbsp;Styled-components
+              HTML, CSS, JavaScript, React Router <br />&nbsp; &nbsp; Redux,
+              Styled components,Figma
             </li>
-            <li><b>TEAM MEMBER</b> : 1인 개발 - 이초롱</li>
-            <li><b>Development period</b> : 2023 , 10</li>
+            <li><b>TEAM MEMBER</b> : 조현아, 이초롱, 김영은, 우동훈</li>
+            <li>
+              <b>담당 기능</b> : 뮤직 상점 홈페이지 디자인 및 페이지 구성,
+              프로필 페이지, 방명록 페이지
+            </li>
+            <li><b>Development period</b> : 2023 , 8</li>
           </ul>
         </div>
       </article>
       <article class="hiring-info">
         <div class="photo">
-          <img src="images/project-detail-02-01.jpg" alt="menu bar" />
+          <img src="images/project-main-04-03.jpg" alt="" />
         </div>
         <div class="center-parent">
           <div class="center-child">
-            <h2>- Menu bar(햄버거 아이콘 클릭 이벤트) -</h2>
+            <h2>- 공통 영역 -</h2>
+            <p>전체 페이지 구조 설계 및 구현 - 라우터 활용</p>
             <p>
-              네비게이션 바의 열림/닫힘 상태를 나타내는 상태 변수 isNav와 값을
-              변경하는 함수 setIsNav를 선언합니다.
+              메인 페이지, 도토리 상점 페이지, 미니 페이지 레이아웃 CSS 디자인
+            </p>
+            <p>미니홈피 gnb 메뉴 기능 구현</p>
+          </div>
+        </div>
+      </article>
+      <article class="hiring-info">
+        <div class="center-parent">
+          <div class="center-child">
+            <h2>- MusicBox 메인 -</h2>
+            <p>
+              인기 음악 차트를 보여주는 컴포넌트입니다. useEffect를 이용한
+              데이터를 가져와 getMusicDate 액션을 dispatch하여 음악 데이터와
+              날짜를 가져옵니다.
+            </p>
+            <p>검색어를 입력하여 음악을 검색할 수 있습니다.</p>
+            <p>장바구니를 보이거나 숨기는 기능을 가지고 있습니다.</p>
+            <p>
+              검색된 음악 리스트를 MusicBoxList 컴포넌트로 전달하여 표시합니다.
+            </p>
+            <p>선택된 음악의 상세 모달을 보여주는 기능도 있습니다.</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="images/project-detail-04-09.jpg" alt="" />
+        </div>
+      </article>
+      <article class="hiring-info">
+        <div class="photo">
+          <img src="images/project-detail-04-08.jpg" alt="" />
+        </div>
+        <div class="center-parent">
+          <div class="center-child">
+            <h2>- MusicBox 검색 -</h2>
+            <p>검색어에 따라 필터링된 음악 리스트를 표시하는 컴포넌트입니다.</p>
+            <p>Redux 상태에서 사용자의 좋아요 정보를 가져옵니다.</p>
+            <p>검색어를 이용하여 음악 리스트를 필터링하여 표시합니다.</p>
+          </div>
+        </div>
+      </article>
+      <article class="hiring-info">
+        <div class="center-parent">
+          <div class="center-child">
+            <h2>- MusicBox 리스트 상세 -</h2>
+            <p>음악 박스 리스트의 각 항목을 나타내는 컴포넌트입니다.</p>
+            <p>
+              음악의 좋아요 상태를 토글하고, 장바구니에 음악을 추가하거나 제거할
+              수 있습니다.
+            </p>
+            <p>음악의 상세 정보를 모달로 보여주는 기능도 가지고 있습니다.</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="images/project-detail-04-07.jpg" alt="" />
+        </div>
+      </article>
+      <article class="hiring-info">
+        <div class="photo">
+          <img src="images/project-detail-04-02.jpg" alt="" />
+        </div>
+        <div class="center-parent">
+          <div class="center-child">
+            <h2>- MusicBox 장바구니 -</h2>
+            <p>장바구니에 담긴 음악 리스트를 보여주는 컴포넌트입니다.</p>
+            <p>
+              장바구니에 음악을 담거나 제거할 수 있습니다. 특정 음악 아이템을
+              삭제하기 위해 removeCart 액션을 dispatch합니다.
             </p>
             <p>
-              햄버거 아이콘을 클릭할 때 호출되는 함수인 onToggle을 정의합니다.
-              이 함수는 현재 상태를 반전시켜 메뉴를 열거나 닫습니다.
-            </p>
-            <p>
-              dataMenu 배열을 순회하며 각 메뉴 항목 렌더링하고, React Router의
-              Link 컴포넌트를 사용하여 링크를 추가합니다.
-            </p>
-            <p>
-              사용자가 햄버거 아이콘 클릭시 상태에 따라 클래스를 추가하여 메뉴가
-              보이거나 감춰지도록 합니다.
+              음악을 장바구니에 추가하면, 장바구니 상태를 업데이트하고
+              musicHistory와 addedToBasket는 local state로 관리됩니다.
             </p>
           </div>
         </div>
@@ -81,29 +152,36 @@
       <article class="hiring-info">
         <div class="center-parent">
           <div class="center-child">
-            <h2>- 카테고리에 알맞은 카드 이미지 노출 -</h2>
-            <p>
-              onCategory 함수는 사용자가 카테고리를 선택할 때 해당 카테고리에
-              속하는 카드만 화면에 표시하고, 필요한 상태 변수를 업데이트하여
-              렌더링을 관리합니다.
-            </p>
+            <h2>- MusicBox Modal 기능 -</h2>
+            <p>음악의 상세 정보를 모달 형태로 보여주는 컴포넌트입니다.</p>
+            <p>음악의 제목, 가수, 음악 비디오를 표시합니다.</p>
           </div>
         </div>
         <div class="photo">
-          <img src="images/project-detail-02-02.jpg" alt="카테고리 노출" />
+          <img src="images/project-detail-04-06.jpg" alt="" />
         </div>
       </article>
       <article class="hiring-info">
         <div class="photo">
-          <img src="images/project-detail-02-03.jpg" alt="검색" />
+          <img src="images/project-detail-04-04.jpg" alt="" />
         </div>
         <div class="center-parent">
           <div class="center-child">
-            <h2>- 포스트 검색 기능 -</h2>
+            <h2>방명록 페이지 - 작성 및 수정 삭제</h2>
+            <p>작성한 방명록 내용을 저장하여 보여줍니다.</p>
             <p>
-              사용자가 입력한 검색어를 기준으로 데이터를 필터링하여 검색 결과를
-              showData에 저장하고, 검색 결과의 여부를 empty로 표시합니다. 검색
-              결과가 없을 때는 모든 카테고리의 항목을 보여줍니다.
+              페이지 로드 시 기본 방명록 표시 : 초기 방명록 하나를 표시하며,
+              사용자 이름, 날짜, 이미지와 함께 내용을 표시합니다.
+            </p>
+            <p>
+              방명록 표시 및 수정/삭제 기능 : 방명록 리스트를 역순으로 매핑하여
+              최신순으로 표시합니다. <br />수정 중인 방명록의 경우 수정 내용을
+              입력할 수 있는 textarea를 표시합니다. <br />수정 및 삭제 버튼을
+              클릭하면 해당 방명록을 수정 또는 삭제합니다.
+            </p>
+            <p>
+              작성 및 수정 권한 관리 : 사용자가 로그인한 사용자인 경우에만
+              방명록 작성 및 수정 가능하도록 설정합니다.
             </p>
           </div>
         </div>
@@ -111,44 +189,48 @@
       <article class="hiring-info">
         <div class="center-parent">
           <div class="center-child">
-            <h2>- 카드 이미지 6개씩 노출 -</h2>
+            <h2>프로필 페이지 - 편집 기능</h2>
             <p>
-              onView 함수는 "더보기" 버튼을 클릭할 때마다 화면에 표시되는 카드
-              개수를 6개씩 늘려주며, 모든 데이터를 노출했을 때에는 해당
-              카테고리의 모든 데이터를 보여줍니다.
+              '수정' 버튼 클릭 시, 편집 모드가 활성화되며 버튼은 '저장' 버튼으로
+              전환됩니다. 각각의 프로필 정보(이름, 성별, 생년월일, 자기소개)를
+              입력할 수 있는 input 요소를 표시합니다.
+            </p>
+            <p>
+              input 요소의 값이 변경되면 해당 값을 Redux를 통해 업데이트합니다.
+            </p>
+            <p>
+              현재는 사진 업로드 기능이 구현되지 않았으므로, 수정 완료 시 임시의
+              사진이 프로필 사진으로 설정됩니다.
             </p>
           </div>
         </div>
         <div class="photo">
-          <img src="images/project-detail-02-04.jpg" alt="카드 노출" />
+          <img src="images/project-detail-04-01.jpg" alt="" />
         </div>
       </article>
       <article class="hiring-info">
         <div class="photo">
-          <img src="images/project-main-02-03.jpg" alt="모달창" />
+          <img src="images/project-detail-04-03.jpg" alt="" />
         </div>
         <div class="center-parent">
           <div class="center-child">
-            <h2>-카드 클릭 시 모달 오픈 & 좋아요 개수 카운트-</h2>
+            <h2>- 미니홈피 배경음악 설정 기능 -</h2>
             <p>
-              특정 카드 아이템을 클릭하면 해당 카드 아이템을 모달 창에 표시하고,
-              모달 창을 열거나 닫는 데 사용
+              페이지 로드 시, 음악 날짜 및 재생 기록을 Redux 및 로컬
+              스토리지에서 가져와 표시합니다.
             </p>
             <p>
-              "좋아요" 버튼을 클릭하면 해당 카드 아이템의 "좋아요" 상태와 수를
-              변경하고, 아이콘의 표시 여부를 업데이트합니다.
+              주크박스 배경 음악 또한 해당 기록을 관리하며, 선택 및 삭제 기능이
+              가능합니다. 선택된 배경 음악이 있는 경우 해당 정보를 표시하고,
+              없다면 "음악을 설정해주세요" 메시지를 보여줍니다.
+            </p>
+            <p>
+              만약 배경 음악 기록이나 해당 사용자의 기록이 없으면 "설정된 배경
+              음악이 없습니다." 메시지가 표시됩니다.
             </p>
           </div>
         </div>
       </article>
-      <!-- <article class="hiring-slogan">
-        <p>
-          We combine planning, architecture, landscape architecture, and
-          interior design as a single professional service to design complete
-          environments that steward natural resources, enhance value for
-          clients, and create communities that endure over time.
-        </p>
-      </article> -->
     </div>
   </body>
 </html>
