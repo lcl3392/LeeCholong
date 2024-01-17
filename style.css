@@ -785,7 +785,8 @@ hr.bar {
   height: 4px;
   border: none;
   background-color: crimson;
-  margin: 25px auto;
+  /* margin: 25px auto; */
+  margin: 24px auto;
 }
 
 .about-heading p {
