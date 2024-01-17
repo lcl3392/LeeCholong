@@ -4,9 +4,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
 /* FontAwesome CDN 4.7 */
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
 
 /* Reset CSS */
 * {
@@ -24,7 +26,7 @@ a {
 
 /* Default CSS */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Hahmlet', serif;
   color: #222;
   font-size: 15px;
   margin: 0;
@@ -420,10 +422,6 @@ header {
 .item h3 {
   font-size: 45px;
   margin-bottom: 60px;
-}
-
-.item h3 b {
-  border-bottom: #fff solid 3px;
 }
 
 .item h3:hover b {
@@ -1038,7 +1036,7 @@ hr.bar {
 
 /* ###################### SubPage : Hiring ###################### */
 .modal {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Hahmlet', serif;
   padding-bottom: 50px;
 }
 
@@ -1117,6 +1115,7 @@ hr.bar {
 }
 
 .center-parent {
+  font-family: 'Hahmlet', serif;
   position: relative;
 }
 
@@ -1278,6 +1277,7 @@ hr.bar {
 .hiring-main.project-main1,
 .hiring-main.project-main2,
 .hiring-main.project-main3 {
+  font-family: 'Hahmlet', serif;
   background: url(images/project-main.jpg) no-repeat center center;
   background-size: cover;
   height: 100vh;
@@ -1294,7 +1294,7 @@ hr.bar {
 .hiring-main.project-main1 .hiring-heading h1,
 .hiring-main.project-main2 .hiring-heading h1,
 .hiring-main.project-main3 .hiring-heading h1 {
-  font-size: 70px;
+  font-size: 70px
 }
 
 .project-detail .hiring-slogan p::before {
@@ -1302,6 +1302,7 @@ hr.bar {
 }
 
 .photo.project-info {
+  font-family: 'Hahmlet', serif;
   font-size: 20px;
   font-weight: 400;
   padding-top: 120px;

@@ -1,147 +1,144 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Project #01</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      ,
-      user-scalable="yes"
-    />
-  </head>
-  <body>
-    <div class="modal project-detail">
-      <div class="header">
-        <div class="header-inner">
-          <div class="modal-display">+ Project Descriptions #01</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Project #01</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" , user-scalable="yes" />
+</head>
+
+<body>
+  <div class="modal project-detail">
+    <div class="header">
+      <div class="header-inner">
+        <div class="modal-display">+ Project Descriptions #01</div>
+      </div>
+    </div>
+    <div class="hiring-main project-main2">
+      <div class="hiring-heading">
+        <span>PROJECT 01</span>
+        <h1>전기자동차 정보 사이트</h1>
+      </div>
+    </div>
+    <article class="hiring-info">
+      <div class="center-parent">
+        <div class="center-child">
+          <h2>+ Project Descriptions #01</h2>
+          <p>React Redux를 사용하여 전기차 정보를 보여주는 웹 애플리케이션</p>
+          <p>
+            카테고리에 알맞은 카드 이미지 노출하여 보여주고 포스트 검색
+            기능,카드 클릭 시 모달 오픈 하여 보여준다.
+          </p>
         </div>
       </div>
-      <div class="hiring-main project-main2">
-        <div class="hiring-heading">
-          <span>PROJECT 01</span>
-          <h1>전기자동차 정보 사이트</h1>
+      <div class="photo project-info">
+        <ul>
+          <li>
+            <b>Website</b> :
+            <a href="https://lcl3392.github.io/Tamea-ev/dist/">Tamea-ev</a>
+          </li>
+          <li><b>Tech Stack</b></li>
+          <li>
+            React, React Hooks, React Router, Axios <br />
+            &nbsp;&nbsp;Styled-components
+          </li>
+          <li><b>TEAM MEMBER</b> : 1인 개발 - 이초롱</li>
+          <li><b>Development period</b> : 2023 , 10</li>
+        </ul>
+      </div>
+    </article>
+    <article class="hiring-info">
+      <div class="photo">
+        <img src="images/project-detail-02-01.jpg" alt="menu bar" />
+      </div>
+      <div class="center-parent">
+        <div class="center-child">
+          <h2>- Menu bar(햄버거 아이콘 클릭 이벤트) -</h2>
+          <p>
+            네비게이션 바의 열림/닫힘 상태를 나타내는 상태 변수 isNav와 값을
+            변경하는 함수 setIsNav를 선언합니다.
+          </p>
+          <p>
+            햄버거 아이콘을 클릭할 때 호출되는 함수인 onToggle을 정의합니다.
+            이 함수는 현재 상태를 반전시켜 메뉴를 열거나 닫습니다.
+          </p>
+          <p>
+            dataMenu 배열을 순회하며 각 메뉴 항목 렌더링하고, React Router의
+            Link 컴포넌트를 사용하여 링크를 추가합니다.
+          </p>
+          <p>
+            사용자가 햄버거 아이콘 클릭시 상태에 따라 클래스를 추가하여 메뉴가
+            보이거나 감춰지도록 합니다.
+          </p>
         </div>
       </div>
-      <article class="hiring-info">
-        <div class="center-parent">
-          <div class="center-child">
-            <h2>+ Project Descriptions #02</h2>
-            <p>React Redux를 사용하여 전기차 정보를 보여주는 웹 애플리케이션</p>
-            <p>
-              카테고리에 알맞은 카드 이미지 노출하여 보여주고 포스트 검색
-              기능,카드 클릭 시 모달 오픈 하여 보여준다.
-            </p>
-          </div>
+    </article>
+    <article class="hiring-info">
+      <div class="center-parent">
+        <div class="center-child">
+          <h2>- 카테고리에 알맞은 카드 이미지 노출 -</h2>
+          <p>
+            onCategory 함수는 사용자가 카테고리를 선택할 때 해당 카테고리에
+            속하는 카드만 화면에 표시하고, 필요한 상태 변수를 업데이트하여
+            렌더링을 관리합니다.
+          </p>
         </div>
-        <div class="photo project-info">
-          <ul>
-            <li>
-              <b>Website</b> :
-              <a href="https://lcl3392.github.io/Tamea-ev/dist/">Tamea-ev</a>
-            </li>
-            <li><b>Tech Stack</b></li>
-            <li>
-              React, React Hooks, React Router, Axios <br />
-              &nbsp;&nbsp;Styled-components
-            </li>
-            <li><b>TEAM MEMBER</b> : 1인 개발 - 이초롱</li>
-            <li><b>Development period</b> : 2023 , 10</li>
-          </ul>
+      </div>
+      <div class="photo">
+        <img src="images/project-detail-02-02.jpg" alt="카테고리 노출" />
+      </div>
+    </article>
+    <article class="hiring-info">
+      <div class="photo">
+        <img src="images/project-detail-02-03.jpg" alt="검색" />
+      </div>
+      <div class="center-parent">
+        <div class="center-child">
+          <h2>- 포스트 검색 기능 -</h2>
+          <p>
+            사용자가 입력한 검색어를 기준으로 데이터를 필터링하여 검색 결과를
+            showData에 저장하고, 검색 결과의 여부를 empty로 표시합니다. 검색
+            결과가 없을 때는 모든 카테고리의 항목을 보여줍니다.
+          </p>
         </div>
-      </article>
-      <article class="hiring-info">
-        <div class="photo">
-          <img src="images/project-detail-02-01.jpg" alt="menu bar" />
+      </div>
+    </article>
+    <article class="hiring-info">
+      <div class="center-parent">
+        <div class="center-child">
+          <h2>- 카드 이미지 6개씩 노출 -</h2>
+          <p>
+            onView 함수는 "더보기" 버튼을 클릭할 때마다 화면에 표시되는 카드
+            개수를 6개씩 늘려주며, 모든 데이터를 노출했을 때에는 해당
+            카테고리의 모든 데이터를 보여줍니다.
+          </p>
         </div>
-        <div class="center-parent">
-          <div class="center-child">
-            <h2>- Menu bar(햄버거 아이콘 클릭 이벤트) -</h2>
-            <p>
-              네비게이션 바의 열림/닫힘 상태를 나타내는 상태 변수 isNav와 값을
-              변경하는 함수 setIsNav를 선언합니다.
-            </p>
-            <p>
-              햄버거 아이콘을 클릭할 때 호출되는 함수인 onToggle을 정의합니다.
-              이 함수는 현재 상태를 반전시켜 메뉴를 열거나 닫습니다.
-            </p>
-            <p>
-              dataMenu 배열을 순회하며 각 메뉴 항목 렌더링하고, React Router의
-              Link 컴포넌트를 사용하여 링크를 추가합니다.
-            </p>
-            <p>
-              사용자가 햄버거 아이콘 클릭시 상태에 따라 클래스를 추가하여 메뉴가
-              보이거나 감춰지도록 합니다.
-            </p>
-          </div>
+      </div>
+      <div class="photo">
+        <img src="images/project-detail-02-04.jpg" alt="카드 노출" />
+      </div>
+    </article>
+    <article class="hiring-info">
+      <div class="photo">
+        <img src="images/project-main-02-03.jpg" alt="모달창" />
+      </div>
+      <div class="center-parent">
+        <div class="center-child">
+          <h2>-카드 클릭 시 모달 오픈 & 좋아요 개수 카운트-</h2>
+          <p>
+            특정 카드 아이템을 클릭하면 해당 카드 아이템을 모달 창에 표시하고,
+            모달 창을 열거나 닫는 데 사용
+          </p>
+          <p>
+            "좋아요" 버튼을 클릭하면 해당 카드 아이템의 "좋아요" 상태와 수를
+            변경하고, 아이콘의 표시 여부를 업데이트합니다.
+          </p>
         </div>
-      </article>
-      <article class="hiring-info">
-        <div class="center-parent">
-          <div class="center-child">
-            <h2>- 카테고리에 알맞은 카드 이미지 노출 -</h2>
-            <p>
-              onCategory 함수는 사용자가 카테고리를 선택할 때 해당 카테고리에
-              속하는 카드만 화면에 표시하고, 필요한 상태 변수를 업데이트하여
-              렌더링을 관리합니다.
-            </p>
-          </div>
-        </div>
-        <div class="photo">
-          <img src="images/project-detail-02-02.jpg" alt="카테고리 노출" />
-        </div>
-      </article>
-      <article class="hiring-info">
-        <div class="photo">
-          <img src="images/project-detail-02-03.jpg" alt="검색" />
-        </div>
-        <div class="center-parent">
-          <div class="center-child">
-            <h2>- 포스트 검색 기능 -</h2>
-            <p>
-              사용자가 입력한 검색어를 기준으로 데이터를 필터링하여 검색 결과를
-              showData에 저장하고, 검색 결과의 여부를 empty로 표시합니다. 검색
-              결과가 없을 때는 모든 카테고리의 항목을 보여줍니다.
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class="hiring-info">
-        <div class="center-parent">
-          <div class="center-child">
-            <h2>- 카드 이미지 6개씩 노출 -</h2>
-            <p>
-              onView 함수는 "더보기" 버튼을 클릭할 때마다 화면에 표시되는 카드
-              개수를 6개씩 늘려주며, 모든 데이터를 노출했을 때에는 해당
-              카테고리의 모든 데이터를 보여줍니다.
-            </p>
-          </div>
-        </div>
-        <div class="photo">
-          <img src="images/project-detail-02-04.jpg" alt="카드 노출" />
-        </div>
-      </article>
-      <article class="hiring-info">
-        <div class="photo">
-          <img src="images/project-main-02-03.jpg" alt="모달창" />
-        </div>
-        <div class="center-parent">
-          <div class="center-child">
-            <h2>-카드 클릭 시 모달 오픈 & 좋아요 개수 카운트-</h2>
-            <p>
-              특정 카드 아이템을 클릭하면 해당 카드 아이템을 모달 창에 표시하고,
-              모달 창을 열거나 닫는 데 사용
-            </p>
-            <p>
-              "좋아요" 버튼을 클릭하면 해당 카드 아이템의 "좋아요" 상태와 수를
-              변경하고, 아이콘의 표시 여부를 업데이트합니다.
-            </p>
-          </div>
-        </div>
-      </article>
-      <!-- <article class="hiring-slogan">
+      </div>
+    </article>
+    <!-- <article class="hiring-slogan">
         <p>
           We combine planning, architecture, landscape architecture, and
           interior design as a single professional service to design complete
@@ -149,6 +146,7 @@
           clients, and create communities that endure over time.
         </p>
       </article> -->
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
