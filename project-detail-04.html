@@ -16,10 +16,10 @@
         <div class="modal-display">+ Project Descriptions #04</div>
       </div>
     </div>
-    <div class="hiring-main project-main1">
+    <div class="hiring-main project-main3">
       <div class="hiring-heading">
         <span>PROJECT 04</span>
-        <h1>Item Management</h1>
+        <h1>여행 , 반응형 웹사이트</h1>
       </div>
     </div>
     <article class="hiring-info">
@@ -27,12 +27,13 @@
         <div class="center-child">
           <h2>+ Project Descriptions #04</h2>
           <p>
-            서버에서 자동차, 물품, 고객 데이터를 가져와 목록을 표시하고
-            관리하는 React 애플리케이션
+            HTML, CSS, JavaScript, jQuery 를 사용하여 스크롤시 애니메이션,
+            디자인이 변경되는 헤더와 이미지 애니메이션, 글자별 텍스트
+            애니메이션, GNB 오픈메뉴 구현
           </p>
           <p>
-            데이터 추가, 수정, 삭제, 검색 하는 기능을 제공하며, MUI Data
-            Grid를 사용하여 데이터를 효과적으로 표시합니다.
+            max-wirdth: 1400px, 1024px, 768px, 500px <br />
+            반응형 웹사이트
           </p>
         </div>
       </div>
@@ -40,33 +41,32 @@
         <ul>
           <li>
             <b>Website</b> :
-            <a href="https://mymanagement-ed39f32ca836.herokuapp.com/">mymanagement</a>
+            <a href="https://lcl3392.github.io/Responsive_Website/">Responsive_Website</a>
           </li>
           <li><b>Tech Stack</b></li>
-          <li>
-            Spring Boot, Spring, Java, React, MariaDB <br />&nbsp; &nbsp; MUI,
-            Postman, Heroku
-          </li>
+          <li>HTML, CSS, JavaScript, jQuery</li>
           <li><b>TEAM MEMBER</b> : 1인 개발 - 이초롱</li>
           <li><b>Development period</b> : 2023 , 11</li>
-          <!-- <li>
-            <b>Notion</b> :
-            <a href="https://scythe-booklet-0cc.notion.site/741c3231ab864a50a11e121d7217bb0f">Studying 정리 내용</a>
-          </li> -->
         </ul>
       </div>
     </article>
     <article class="hiring-info">
       <div class="photo">
-        <img src="images/project-detail-01-01.jpg" alt="로그인 화면" />
+        <img src="images/project-detail-03-01.jpg" alt="" />
       </div>
       <div class="center-parent">
         <div class="center-child">
-          <h2>- 로그인 화면 -</h2>
+          <h2>- Menu bar -</h2>
           <p>
-            사용자의 로그인, 로그아웃 상태에 따라 UI를 동적으로 제어하고,
-            사용자와의 상호작용에 따라 메인 화면을 표시합니다. <br>
-            ID : user / PW : user 입력 하여 로그인 합니다.
+            네비게이션 토글 함수: 페이지가 로드되면 jQuery로 정의된 이벤트
+            핸들러가 동작합니다. 네비게이션 메뉴를 열고 닫는 행위는 페이지
+            상단 헤더의 'gnbBtn' 클래스를 가진 요소를 클릭하면 헤더
+            내비게이션(nav.gnb)에 'on' 클래스를 토글하는 함수가 실행됩니다.
+          </p>
+          <p>
+            클릭 이벤트 관리: 헤더 버튼 클릭, 본문 클릭, 내부 닫기 버튼 클릭
+            등 각각의 동작에 대한 클릭 이벤트를 정의하여, 사용자가 메뉴를
+            편리하게 열고 닫을 수 있도록 구성되어 있습니다.
           </p>
         </div>
       </div>
@@ -74,145 +74,72 @@
     <article class="hiring-info">
       <div class="center-parent">
         <div class="center-child">
-          <h2>- 메인 화면 기능 -</h2>
-          <ol>
-            <li>
-              MenuBar : 사용자가 메뉴를 선택할 때마다 해당하는 컴포넌트를
-              동적으로 렌더링하여 유연하고 확장 가능한 UI를 화면에 보여줍니다.
-            </li>
-            <li>
-              엑셀 저장: 사용자가 테이블 데이터를 CSV나 Excel과 같은 형식으로
-              내보내는 기능을 제공합니다.
-            </li>
-            <li>
-              검색: 사용자가 검색어를 입력할 때마다 해당 검색어를 기반으로
-              제품 데이터를 가져오는 검색 기능을 설정합니다.
-            </li>
-            <li>
-              품목 추가: 새로운 자동차를 서버에 추가하고, 성공 시 자동으로
-              업데이트된 자동차 목록을 다시 가져와 보여줍니다.
-            </li>
-            <li>
-              품목 수정: 자동차 정보를 업데이트하고, 성공 시 자동으로
-              업데이트된 자동차 목록을 다시 가져와 보여줍니다.
-            </li>
-            <li>
-              품목 삭제: 사용자의 확인에 따라 자동차 정보를 삭제하고, 삭제
-              성공 시 자동으로 업데이트된 자동차 목록을 보여줍니다.
-            </li>
-            <li>
-              로그아웃: 사용자의 확인에 따라 세션 스토리지에서 토큰을
-              제거하고, 그에 따라 인증 상태를 업데이트하여 사용자를 로그아웃
-              상태로 만듭니다.
-            </li>
-          </ol>
+          <h2>- 스크롤 애니메이션 -</h2>
+          <p>
+            페이지를 스크롤하거나 창의 크기를 조절할 때 발생하는 이벤트에 따라
+            여러 가지 효과를 적용하여 보여집니다.
+          </p>
+          <p>
+            jQuery를 사용하여 화면에 나타나는 요소에 스크롤 애니메이션 효과를
+            부여합니다.
+          </p>
+          <p>
+            스크롤 위치 저장: 현재 스크롤 위치를 나타내는 변수 scrollPos를
+            초기화하고, 스크롤 이벤트가 발생할 때마다 현재 스크롤 위치를
+            scrollTop() 메서드를 사용하여 업데이트합니다.
+          </p>
+          <p>
+            스크롤 위치에 따른 효과 적용 - fixHeader() 및 fixList(): 각
+            함수에서 스크롤 위치에 따라 헤더나 리스트에 특정 클래스를
+            추가하거나 제거하여 시각적인 변화를 주어 스크롤 애니메이션을
+            완성합니다.
+          </p>
         </div>
       </div>
       <div class="photo">
-        <img src="images/project-detail-01-02.jpg" alt="메인 화면" />
-      </div>
-    </article>
-    <article class="hiring-info">
-      <div class="photo">
-        <img src="images/project-detail-01-03.jpg" alt="고객 정보" />
-      </div>
-      <div class="center-parent">
-        <div class="center-child">
-          <h2>- 고객 정보표시 -</h2>
-          <ol>
-            <li>
-              엑셀 저장: 사용자가 테이블 데이터를 CSV나 Excel과 같은 형식으로
-              내보내는 기능을 제공합니다.
-            </li>
-            <li>
-              정보 표시: 아이콘 클릭시 information 목록에 저장된 고객 정보가
-              표시되어 보여집니다.
-            </li>
-            <li>
-              고객 수정: 고객 정보를 업데이트하고, 성공 시 자동으로 업데이트된
-              고객 목록을 다시 가져와 보여줍니다.
-            </li>
-            <li>
-              고객 삭제: 사용자의 확인에 따라 고객 정보를 삭제하고, 삭제 성공
-              시 자동으로 업데이트된 고객 목록을 보여줍니다.
-            </li>
-            <li>
-              텍스트필드: 사용자의 이름, 성별, 연락처, 주소를 입력받아
-              보여줍니다.
-            </li>
-            <li>취소: 취소 버튼 클릭시 텍스트 필드가 리셋되어 보여줍니다.</li>
-            <li>저장: 저장 버튼 클릭시 테이블 목록에 저장되어 보여줍니다.</li>
-          </ol>
+        <div class=".single-item">
+          <img src="images/project-detail-03-03.jpg" alt="" />
         </div>
       </div>
     </article>
     <article class="hiring-info">
       <div class="center-parent">
-        <div class="center-child">
-          <h2>- 검색 화면 -</h2>
+        <div class="center-child-mobile">
+          <h2>- 반응형 작업 -</h2>
           <p>
-            상태(State) 정의: const [searchTerm, setSearchTerm] =
-            useState('');: 빈 문자열을 초기값으로 가지는 searchTerm 상태를
-            선언합니다. 이 상태는 자동차 목록을 검색하는 데 사용됩니다.
+            1400px 이상 (대형 화면): 내부 컨테이너와 목록 등의 너비를 90%로
+            조절하여 콘텐츠의 넓은 화면에 대응합니다. 일부 섹션에서는 특정
+            요소의 크기와 레이아웃을 조정하여 적절한 시각적 효과를 부여합니다.
           </p>
           <p>
-            검색어 입력 필드: 검색어가 변경될 때마다 onChange 핸들러를 통해
-            setSearchTerm 함수를 호출하여 searchTerm 상태를 업데이트합니다.
-          </p>
-        </div>
-      </div>
-      <div class="photo">
-        <img src="images/project-detail-01-04.jpg" alt="검색 화면" />
-      </div>
-    </article>
-    <article class="hiring-info">
-      <div class="photo">
-        <img src="images/project-detail-01-05.jpg" alt="품목" />
-      </div>
-      <div class="center-parent">
-        <div class="center-child">
-          <h2>- 품목 추가, 수정, 삭제 -</h2>
-          <p>
-            추가 : 상단 추가 버튼 클릭시, 모달창이 열리면서 입력 필드 내용을
-            받아 새로운 품목을 서버에 추가하고, 성공 시 자동으로 업데이트된
-            목록을 다시 가져옵니다.
+            1024px (태블릿 등 중간 화면): 제목과 텍스트의 폰트 크기를
+            조정하고, 섹션 레이아웃을 유연하게 변경하여 사용자에게 더 편한
+            경험을 제공합니다. 특히 접근성을 고려하여 일부 기능을 개선하고
+            글꼴 스타일을 조정합니다.
           </p>
           <p>
-            수정 : 수정 아이콘 클릭시, 모달창이 열리면서 입력 필드 내용을
-            수정하여 정보를 업데이트하고, 성공 시 자동으로 업데이트된 목록을
-            다시 가져옵니다.
+            768px (모바일 가로 방향):모바일 가로 화면에서는 일부 섹션의
+            레이아웃을 세로로 변경하고 이미지 크기를 조절하여 사용자에게
+            최적화된 뷰를 제공합니다. 특히 저해상도 디바이스에서의 이미지 및
+            텍스트 렌더링을 고려하여 스타일을 수정합니다.
           </p>
           <p>
-            삭제 : 삭제 아이콘 클릭시, 알림창이 표시 사용자의 확인에 따라
-            정보를 삭제하고, 삭제 성공 시 자동으로 업데이트된 목록을 다시
-            가져옵니다.
+            500px (최소 모바일 화면): 헤더 요소들의 크기와 간격을 최적화하고,
+            내비게이션 메뉴를 축소하여 더 나은 모바일 사용자 경험을
+            제공합니다. 특히 일부 섹션에서는 레이아웃을 단순화하고 일부 요소를
+            감추어 화면을 간소화합니다.
           </p>
-        </div>
-      </div>
-    </article>
-    <article class="hiring-info">
-      <div class="center-parent">
-        <div class="center-child">
-          <h2>- 로그아웃 화면 -</h2>
           <p>
-            로그아웃 함수는 사용자의 확인에 따라 세션 스토리지에서 토큰을
-            제거하고, 그에 따라 인증 상태를 업데이트하여 사용자를 로그아웃
-            상태로 만듭니다.
+            모든 크기에서는 viewport 설정을 통해 화면 크기와 초기 배율을
+            조절하고, 미디어 쿼리를 활용하여 각 화면 크기에 맞게 스타일을
+            동적으로 조정하여 반응형 웹 디자인을 완성합니다.
           </p>
         </div>
       </div>
       <div class="photo">
-        <img src="images/project-detail-01-06.jpg" alt="로그아웃" />
+        <img src="images/project-detail-03-02.jpg" alt="" />
       </div>
     </article>
-    <!-- <article class="hiring-slogan">
-        <p>
-          We combine planning, architecture, landscape architecture, and
-          interior design as a single professional service to design complete
-          environments that steward natural resources, enhance value for
-          clients, and create communities that endure over time.
-        </p>
-      </article> -->
   </div>
 </body>
 

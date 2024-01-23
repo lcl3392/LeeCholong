@@ -550,6 +550,10 @@ input[id="tab5"]:checked~.tabs {
   margin-left: -400%;
 }
 
+/* input[id="tab6"]:checked~.tabs {
+  margin-left: -500%;
+} */
+
 /* Project info */
 .project-info {
   padding: 86px 50px 50px 50px;

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Project #06</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" , user-scalable="yes" />
+</head>
+
+<body>
+  <div class="modal project-detail">
+    <div class="header">
+      <div class="header-inner">
+        <div class="modal-display">+ Project Descriptions #06</div>
+      </div>
+    </div>
+    <div class="hiring-main project-main3">
+      <div class="hiring-heading">
+        <span>PROJECT 06</span>
+        <h1>도서관리 기능 사이트 구현</h1>
+      </div>
+    </div>
+    <article class="hiring-info">
+      <div class="center-parent">
+        <div class="center-child">
+          <h2>+ Project Descriptions #06</h2>
+          <p>
+            주요 기능은 도서 정보를 입력하고 출력하며, 도서 목록을
+            추가,수정,삭제하는 기능이 있습니다.
+          </p>
+          <p>
+            localStorage를 사용하여 도서 데이터를 브라우저 로컬 스토리지에
+            저장하고 불러옵니다.
+          </p>
+        </div>
+      </div>
+      <div class="photo project-info">
+        <ul>
+          <li>
+            <b>Website</b> :
+            <a href="https://lcl3392.github.io/book_management/">book_management</a>
+          </li>
+          <li><b>Tech Stack</b></li>
+          <li>HTML, CSS, JavaScript</li>
+          <li><b>TEAM MEMBER</b> : 1인 개발 - 이초롱</li>
+          <li><b>Development period</b> : 2023 ,09</li>
+        </ul>
+      </div>
+    </article>
+    <article class="hiring-info">
+      <div class="photo">
+        <img src="images/project-main-05-01.jpg" alt="" />
+      </div>
+      <div class="center-parent">
+        <div class="center-child">
+          <h2>- Book,BookUI 클래스, 데이터 관리 -</h2>
+          <p>
+            Book 클래스: 도서 객체를 생성하는 클래스로, title, author,
+            bookcode 속성을 가집니다.
+          </p>
+          <p>
+            BookUI 클래스: 도서 관련 기능을 담당하는 클래스로, 데이터 관리,
+            출력, 추가, 삭제, 메시지 표시 등을 처리합니다.
+          </p>
+          <p>
+            localStorage를 사용하여 도서 데이터를 브라우저 로컬 스토리지에
+            저장하고 불러옵니다.
+          </p>
+          <p>
+            초기화 시, getData 메서드를 사용하여 저장된 데이터를 불러오고,
+            showData 메서드를 사용하여 화면에 출력합니다.
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="hiring-info">
+      <div class="center-parent">
+        <div class="center-child">
+          <h2>- 폼 에서 데이터를 제출할 때 발생하는 이벤트 처리 -</h2>
+          <p>
+            도서 객체 생성: 입력된 데이터를 사용하여 새로운 도서 객체를 생성
+          </p>
+          <p>
+            데이터 유효성 검사: 제목, 저자, 도서 코드 중 하나라도 비어있는
+            경우 "값을 넣으세요" 메시지를 표시하고, 그렇지 않으면 도서를
+            추가합니다.
+          </p>
+          <p>
+            데이터 추가: 유효한 데이터가 입력되면 도서를 목록에 추가하고 로컬
+            스토리지에 저장합니다.
+          </p>
+          <p>
+            입력 폼 초기화: 입력 폼의 값을 초기화하고 제목 입력 필드로
+            포커스를 이동합니다.
+          </p>
+          <p>
+            성공 메시지 표시: 도서가 성공적으로 추가되었음을 사용자에게 알리는
+            메시지를 표시합니다.
+          </p>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="images/project-main-05-02.jpg" alt="" />
+      </div>
+    </article>
+    <article class="hiring-info">
+      <div class="photo">
+        <img src="images/project-main-05-03.jpg" alt="" />
+      </div>
+      <div class="center-parent">
+        <div class="center-child">
+          <h2>- 도서 삭제 -</h2>
+          <p>도서 목록에서 "X" 버튼을 클릭하면 해당 도서가 삭제됩니다.</p>
+          <p>
+            del 메서드를 사용하여 도서를 삭제하고, 도서 목록과
+            localStorage에서 해당 도서를 제거합니다.
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+</body>
+
+</html>
